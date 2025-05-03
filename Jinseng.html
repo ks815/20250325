@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Ginseng Website / 西洋参网站</title>
+</head>
+<body>
+    <h1>唐人街西洋参</h1>
+    <p>Website for Ginseng / 这是关于西洋参的页面。</p>
+    <img src="中华牌（店门）.webp" alt="A beautiful photo" width="500" height="333" onclick=toggleInfo()>
+
+    <img src="中华牌（1）.webp" alt="A beautiful photo" width="500" height="333" onclick=toggleInfo()>  
+    <img src="中华牌（2）.webp" alt="A beautiful photo" width="500" height="333" onclick=toggleInfo()>
+
+    <img src="中华牌（3）.webp" alt="A beautiful photo" width="500" height="333" onclick=toggleInfo() >
+    <img src="中华牌（4）.webp" alt="A beautiful photo" width="500" height="333" onclick=toggleInfo() >
+    <img src="中华牌（5）.webp" alt="A beautiful photo" width="500" height="333" onclick=toggleInfo() >
+    <img src="中华牌（6）.webp" alt="A beautiful photo" width="500" height="333" onclick=toggleInfo() >
+    <img src="新龙与海味（店门）.webp" alt="A beautiful photo" width="500" height="333" onclick=toggleInfo() >
+   
+    <div id="info">Ginseng is a traditional herb used for energy and health. 人参是一种传统的补药。</div>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";  // Show the text
+            } else {
+                info.style.display = "none";   // Hide the text
+            }
+        }
+    </script>
+    <button onclick="Hello()">Click me</button>
+    <script>
+        function Hello() {
+            alert("Hello! 欢迎访问！");
+        }
+    </script>
+</body>
+</html>
